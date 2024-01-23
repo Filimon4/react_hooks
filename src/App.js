@@ -6,10 +6,12 @@ import ElemLink from './useRef/ElemLink'
 import ToggleCombine from './useContext/ToggleButton/ToggleCombine'
 import ThemeProvider from './useContext/MultipleContext/LoginUser'
 import HookLogin from './useContext/HookContext/HookLogin'
+import Counter from './useReducer/Counter'
+import Todos from './useReducer/Todos'
 
 const App = () => {
   return (<>
-    <HookLogin />
+    <Todos />
   </>)
 }
 
