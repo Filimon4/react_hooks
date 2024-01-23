@@ -1,0 +1,27 @@
+
+.button {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.button-dark {
+    color: white;
+    border: 1px solid white;
+}
+
+.plane {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.plane-dark {
+    background-color: black;
+    color: white;
+}
