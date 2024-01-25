@@ -16,10 +16,13 @@ import PrintLoad from './useDeferredValue/PrintLoad'
 import FocusText from './useImperativeHandle/TextFocus/FocusText'
 import MultButtons from './useImperativeHandle/MultipleButtons/MultButtons'
 import DebugComp from './useDebugValue/DebugComp'
+import Emails from './useId/Emails'
+import FetchData from './useHook/FetchData'
+import Urls from './useHook/Urls'
 
 const App = () => {
   return (<>
-    <DebugComp />
+    <Urls  />
   </>)
 }
 
