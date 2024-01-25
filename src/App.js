@@ -11,10 +11,15 @@ import Todos from './useReducer/Todos'
 import FibList from './useCallback/FibList'
 import SaveValues from './useCustomHook/useLocalStorage'
 import MoveText from './useLayoutEffect/MoveText'
+import PrintF from './useTransition/PrintF'
+import PrintLoad from './useDeferredValue/PrintLoad'
+import FocusText from './useImperativeHandle/TextFocus/FocusText'
+import MultButtons from './useImperativeHandle/MultipleButtons/MultButtons'
+import DebugComp from './useDebugValue/DebugComp'
 
 const App = () => {
   return (<>
-    <MoveText />
+    <DebugComp />
   </>)
 }
 

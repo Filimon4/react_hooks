@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useDebugValue} from 'react';
 import useUpdateLogger from './useUpdateLogger';
 
 // hook part
@@ -14,9 +14,11 @@ function useLocalStorage(key, initValue) {
         return getSavedValue(key, initValue)
     })
 
+    useDebugValue(value)
+
     useEffect(() => {
         localStorage.setItem(key, JSON.stringify(value))
-    }, [value])
+    }, [value, key])
 
     return [value, setValue]
 }
