@@ -9,10 +9,12 @@ import HookLogin from './useContext/HookContext/HookLogin'
 import Counter from './useReducer/Counter'
 import Todos from './useReducer/Todos'
 import FibList from './useCallback/FibList'
+import SaveValues from './useCustomHook/useLocalStorage'
+import MoveText from './useLayoutEffect/MoveText'
 
 const App = () => {
   return (<>
-    <FibList />
+    <MoveText />
   </>)
 }
 
