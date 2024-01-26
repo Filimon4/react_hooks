@@ -1,5 +1,6 @@
 import React, { Suspense, useState } from "react";
 import FetchData from "./FetchData";
+import ErrorBoundary from "./ErrorBoundary";
 
 const URLS = {
     USERS: "https://jsonplaceholder.typicode.com/users",
@@ -33,9 +34,11 @@ const Urls = () => {
                     </label>
                 </form>
             </div>
-            <Suspense fallback={<div>Loading...</div>}>
-                <FetchData url={url} />
-            </Suspense>
+            <ErrorBoundary fallback={<div>Error</div>} >
+                <Suspense fallback={<div>Loading...</div>}>
+                    <FetchData url={url} shouldFetch/>
+                </Suspense>
+            </ErrorBoundary>
 
         </>
     );
