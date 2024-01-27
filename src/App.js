@@ -21,11 +21,12 @@ import FetchData from './useHook/FetchData'
 import Urls from './useHook/Urls'
 import QueryContainer from './useQueryHook/studyExample/QueryContainer'
 import DevToolUse from './useQueryHook/devTools/DevToolUse'
+import StartWars from './useQueryHook/starWarsAPI/StartWars'
 
 const App = () => {
   return (
     <>
-      <DevToolUse />
+      <StartWars />
     </>
   )
 }
