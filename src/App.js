@@ -19,12 +19,13 @@ import DebugComp from './useDebugValue/DebugComp'
 import Emails from './useId/Emails'
 import FetchData from './useHook/FetchData'
 import Urls from './useHook/Urls'
-import QueryContainer from './useQueryHook/QueryContainer'
+import QueryContainer from './useQueryHook/studyExample/QueryContainer'
+import DevToolUse from './useQueryHook/devTools/DevToolUse'
 
 const App = () => {
   return (
     <>
-      <QueryContainer />
+      <DevToolUse />
     </>
   )
 }
