@@ -19,11 +19,14 @@ import DebugComp from './useDebugValue/DebugComp'
 import Emails from './useId/Emails'
 import FetchData from './useHook/FetchData'
 import Urls from './useHook/Urls'
+import QueryContainer from './useQueryHook/QueryContainer'
 
 const App = () => {
-  return (<>
-    <Urls  />
-  </>)
+  return (
+    <>
+      <QueryContainer />
+    </>
+  )
 }
 
 export default App

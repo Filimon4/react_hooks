@@ -16,7 +16,6 @@ const HookLogin = () => {
 
 const LoginPaner = () => {
     const {currentUser} = useCurrentUser()
-    console.log(currentUser)
 
     return (
         <>
