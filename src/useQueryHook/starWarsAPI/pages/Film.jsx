@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import React from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
+import './films.css'
 
 const Film = () => {
     let params = useParams();
@@ -15,12 +16,11 @@ const Film = () => {
     if(status === 'pending') {
         return (<p>Loading...</p>)
     }
-    console.log(FilmData)
     return (
-        <div>
+        <div className="film-page height_100pr">
             <h1>{FilmData.title}</h1>
-            <p>{FilmData.opening_crawl}</p>
-            <h2>Director: {FilmData.director}</h2>
+            <p className="film-description">{FilmData.opening_crawl}</p>
+            <h2 className="film-director">Director: {FilmData.director}</h2>
             <h1>Characters:</h1>
             {FilmData.characters.map(char => {
                 const characterUrlParts = char.split('/').filter(Boolean)
@@ -44,8 +44,8 @@ function Character(props) {
     }
     console.log(data)
     return (
-        <article key={id}>
-            <Link to={`/characters/${id}`}>
+        <article className="film-plot" key={id}>
+            <Link className="film-acrticle" to={`/characters/${id}`}>
                 {data.name}
             </Link>
         </article>

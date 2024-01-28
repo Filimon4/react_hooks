@@ -4,6 +4,7 @@ import React from 'react'
 import { Router } from 'react-router'
 import Layout from './Layout'
 import { BrowserRouter } from 'react-router-dom'
+import './style.css'
 
 const queryClient = new QueryClient()
 

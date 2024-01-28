@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import React from 'react'
 import { useParams } from 'react-router'
 import { Link } from 'react-router-dom'
+import './characters.css'
 
 const Character = () => {
     let params = useParams()
@@ -18,8 +19,8 @@ const Character = () => {
 
     console.log(data)
     return (
-        <div>
-            <h1>{data.name}</h1>
+        <div className="char-page ">
+            <h1 className='char-title'>{data.name}</h1>
             <table>
                 <tr>
                     <th>Feature</th>
@@ -71,8 +72,8 @@ function Film({id}) {
     }
 
     return (
-        <article key={id}>
-            <Link to={`/films/${id}`}>
+        <article className='char-plot' key={id}>
+            <Link className='char-acrticle' to={`/films/${id}`}>
                 {data.episode_id}. {data.title}
             </Link>
         </article>

@@ -1,0 +1,45 @@
+
+.film-page {
+    font-family: 'Work Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(30deg, rgba(0,0,0,1) 0%, rgba(170,101,0,1) 44%, rgba(255,151,0,1) 76%);
+}
+
+.film-title {
+    margin-bottom: 10px;
+    color: #F19738;
+    font-size: 100px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.film-plot {
+    color: white;
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    
+}
+
+.film-acrticle {
+    color: white;
+    text-decoration: none; /* no underline */
+    color: #F19738;
+}
+
+.film-description {
+    max-width: 40%;
+    margin-bottom: 20px;
+}
+
+.film-director {
+    margin-bottom: 20px;
+}
+
+.height_100pr {
+    height: 100%;
+}
